@@ -266,6 +266,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   background-color: var(--accent-color);
+  cursor: pointer;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -588,8 +589,9 @@ body {
   color: var(--cloud-color);
 }
 
-.portfolio-link:hover .portfolio-overlay {
-  transform: translatex(0);
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+  transform: translateY(0);
 }
 
 .portfolio-content {
